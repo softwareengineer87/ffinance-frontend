@@ -1,0 +1,19 @@
+.transactions .header-transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-transaction .box-category {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+}
+
+.box-category .btn-category {
+  background-color: var(--color-gray);
+  padding: .5rem 1rem;
+  color: var(--color-black);
+  cursor: pointer;
+}

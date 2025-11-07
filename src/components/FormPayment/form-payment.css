@@ -1,0 +1,39 @@
+.payments-container .payments .form-payment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.payments .form-payment input,
+.payments .form-payment select {
+  padding: 1rem;
+  background-color: var(--color-white);
+}
+
+.form-payment textarea {
+  padding: 1rem;
+  resize: none;
+  background-color: var(--color-white);
+}
+
+.payments .buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.payments-container .payments .buttons .btn-payment {
+  background-color: var(--color-red);
+  padding: .5rem 1rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.buttons .btn-cancell {
+  background-color: var(--color-gray);
+  padding: .5rem 1rem;
+  color: var(--color-black);
+  cursor: pointer;
+}
