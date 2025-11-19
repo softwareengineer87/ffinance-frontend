@@ -2,7 +2,7 @@ import { MiddlewareConfig, NextRequest, NextResponse } from "next/server";
 import { deleteCookie } from "cookies-next/client";
 import { jwtDecode } from 'jwt-decode';
 const publicRoutes = [
-  { path: '/sign-in', whenAthenticated: 'redirect' },
+  { path: '/', whenAthenticated: 'redirect' },
   { path: '/webdesign/signup', whenAthenticated: 'next' },
 ] as const;
 
