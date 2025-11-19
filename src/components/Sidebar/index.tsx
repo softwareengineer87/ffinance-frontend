@@ -51,14 +51,6 @@ function Sidebar() {
           status={true}
           activeMessage={activeMessage}
         />
-        <header className='header-sidebar'>
-          <Image
-            src={photo.url}
-            width={50}
-            height={50}
-            alt='Logotipo'
-          />
-        </header>
         <nav className='menu'>
           <ul>
             <li><Link className='link' href='/'><IconHome stroke={1} /><span className='close'>Home</span></Link></li>
