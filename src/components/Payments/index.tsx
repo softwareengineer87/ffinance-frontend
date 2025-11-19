@@ -164,15 +164,15 @@ function Payments({ payments }: PaymentProps) {
                     </td>
                     <td>
                       <span className='cell-header'>Data inicio</span>
-                      {Format.formatDate(formatDate(payment.start_date))}
+                      {formatDate(payment.start_date) ? Format.formatDate(formatDate(payment.start_date)!) : ''}
                     </td>
                     <td>
                       <span className='cell-header'>Data final</span>
-                      {Format.formatDate(formatDate(payment.end_date))}
+                      {formatDate(payment.end_date) ? Format.formatDate(formatDate(payment.end_date)!) : ''}
                     </td>
                     <td>
                       <span className='cell-header'>Data de criação</span>
-                      {Format.formatDate(formatDate(payment.created_at))}
+                      {formatDate(payment.created_at) ? Format.formatDate(formatDate(payment.created_at)!) : ''}
                     </td>
                     <td className='actions'>
                       <span className='cell-header'>Ações</span>

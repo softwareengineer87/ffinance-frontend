@@ -66,7 +66,6 @@ function BusinessProfile() {
       <div className='box-plan'>
         <h2>Perfil da empresa</h2>
         <div className='plan'>
-          <p>Seu plano <h3>{businessDetail.plan}</h3></p>
         </div>
       </div>
       <button
@@ -95,8 +94,6 @@ function BusinessProfile() {
           <div className='info-um'>
             <p><h3>Nome: </h3> {businessDetail.name}</p>
             <p><h3>Email: </h3> {businessDetail.email}</p>
-            <p><h3>Cidade: </h3> {businessDetail.city}</p>
-            <p><h3>Bairro: </h3> {businessDetail.district}</p>
           </div>
         </div>
       )}

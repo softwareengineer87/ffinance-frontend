@@ -1,7 +1,7 @@
 'use client';
 
 import './page.css';
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDashboard } from '@/data/hooks/useDashboard';
 import { StatisticCard } from '@/components/StatisticCard';
 import {
@@ -11,13 +11,9 @@ import {
   IconCurrencyDollar,
   IconTool,
 } from '@tabler/icons-react';
-import { useRouter } from 'next/navigation';
 import { Message } from '@/components/Message';
 import { Format } from '@/utils/Format';
 import { Search } from '@/components/Search';
-import { Transaction } from '@/models/Transaction';
-import { baseURL } from '@/utils/api';
-import { Auth } from '@/data/contexts/Auth';
 
 export default function Home() {
 
@@ -35,15 +31,6 @@ export default function Home() {
     status,
     activeMessage,
   } = useDashboard();
-
-  const { push } = useRouter();
-
-
-  function redirectTo(url: string) {
-    setTimeout(() => {
-      push(url);
-    }, 3000);
-  }
 
   const revenue = getRevenues();
   const expense = getExpense();

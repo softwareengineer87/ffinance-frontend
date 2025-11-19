@@ -59,36 +59,6 @@ function FormBusiness({
             </div>
           </div>
           <div className='box-inputs'>
-            <div className='input-form'>
-              <label htmlFor='city'>Cidade</label>
-              <input
-                onChange={(e) => changeBusiness({ ...business, city: e.target.value })}
-                value={business.city}
-                type='text'
-                id='city'
-                placeholder='Cidade'
-              />
-            </div>
-            <div className='input-form'>
-              <label htmlFor='district'>Bairro</label>
-              <input
-                onChange={(e) => changeBusiness({ ...business, district: e.target.value })}
-                value={business.district}
-                type='text'
-                id='district'
-                placeholder='Bairro'
-              />
-            </div>
-            <div className='input-form'>
-              <label htmlFor='number'>Nº</label>
-              <input
-                onChange={(e) => changeBusiness({ ...business, addressNumber: Number(e.target.value) })}
-                value={business.addressNumber}
-                type='number'
-                id='number'
-                placeholder='Número'
-              />
-            </div>
           </div>
         </form>
         <div className='buttons-form'>

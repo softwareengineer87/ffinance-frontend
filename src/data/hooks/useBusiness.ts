@@ -78,12 +78,7 @@ function useBusiness() {
         body: JSON.stringify({
           name: businessData.name,
           email: businessData.email,
-          cpf: businessData.cpf,
           password: businessData.password,
-          city: businessData.city,
-          district: businessData.district,
-          address_number: businessData.addressNumber,
-          description: businessData.description
         })
       });
 
